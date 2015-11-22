@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster); 
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+
+$nav-color: #ff33ff;
+$hover-color: #3399ff;
+$text-color: #ffffff;
+$content-font: 'Bitter' serif;
+$title-font: 'Lobster', cursive; 
+
+nav {
+
+	ul {
+		background: $nav-color;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-family: $content-font;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: $text-color;
+		display: inline-block;
+		padding: 10px 16px;
+		text-decoration: none;
+	}
+
+	a:hover {
+		background: $hover-color;
+	}
+}
+
+header {
+
+	@mixin border-radius($radius) {
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+		border-radius: $radius;
+	}
+	
+	.panel {
+		border: 3px solid $nav-color;
+		background: $hover-color;
+		margin: 10px;
+		color: $text-color;
+	}
+
+	.big-panel {
+		@extend .panel;
+		@include border-radius(20px);
+		font-size: 56px;
+		padding: 20px;
+		font-family: $title-font;
+	}
+
+	.little-panel {
+		@extend .panel;
+		@include border-radius(5px);
+		padding: 5px;
+		font-size: 20px;
+		font-family: $content-font; 
+	}
+}

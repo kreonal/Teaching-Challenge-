@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+nav ul {
+  background: #ff33ff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Bitter" serif; }
+nav li {
+  display: inline-block; }
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 16px;
+  text-decoration: none; }
+nav a:hover {
+  background: #3399ff; }
+
+header .panel, header .big-panel, header .little-panel {
+  border: 3px solid #ff33ff;
+  background: #3399ff;
+  margin: 10px;
+  color: #ffffff; }
+header .big-panel {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 56px;
+  padding: 20px;
+  font-family: "Lobster", cursive; }
+header .little-panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Bitter" serif; }
+
+/*# sourceMappingURL=main.css.map */
